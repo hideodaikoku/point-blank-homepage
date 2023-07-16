@@ -116,17 +116,6 @@ exports.createSchemaCustomization = async ({ actions }) => {
       url: String
     }
 
-    interface HomepageHero implements Node & HomepageBlock {
-      id: ID!
-      blocktype: String
-      heading: String!
-      kicker: String
-      subhead: String
-      image: HomepageImage
-      text: String
-      links: [HomepageLink]
-    }
-
     interface HomepageFeature implements Node & HomepageBlock {
       id: ID!
       blocktype: String
@@ -375,18 +364,6 @@ exports.createSchemaCustomization = async ({ actions }) => {
       url: String @imageUrl
       file: JSON
       title: String
-    }
-
-    type ContentfulHomepageHero implements Node & HomepageHero & HomepageBlock
-      @dontInfer {
-      id: ID!
-      blocktype: String @blocktype
-      heading: String!
-      kicker: String
-      subhead: String
-      image: HomepageImage @link(from: "image___NODE")
-      text: String
-      links: [HomepageLink] @link(from: "links___NODE")
     }
 
     type ContentfulHomepageFeature implements Node & HomepageBlock & HomepageFeature

@@ -59,7 +59,7 @@ export default function Header() {
       }
     }
   `)
-
+  
   const { navItems, cta } = data.layout.header
   const [isOpen, setOpen] = React.useState(false)
 
@@ -82,24 +82,26 @@ export default function Header() {
               <Text variant="navTitle">POINT BLANK CAPITAL</Text>
             </Flex>
           </NavLink>
-          <nav>
-            <FlexList gap={4}>
-              {navItems &&
-                navItems.map((navItem) => (
-                  <li key={navItem.id}>
-                    {navItem.navItemType === "Group" ? (
-                      <NavItemGroup
-                        name={navItem.name}
-                        navItems={navItem.navItems}
-                      />
-                    ) : (
-                      <NavLink to={navItem.href}>{navItem.text}</NavLink>
-                    )}
-                  </li>
-                ))}
-            </FlexList>
-          </nav>
-          <div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div>
+          <Flex variant="responsive">
+            <nav>
+              <FlexList gap={4}>
+                {navItems &&
+                  navItems.map((navItem) => (
+                    <li key={navItem.id}>
+                      {navItem.navItemType === "Group" ? (
+                        <NavItemGroup
+                          name={navItem.name}
+                          navItems={navItem.navItems}
+                        />
+                      ) : (
+                        <NavLink to={navItem.href}>{navItem.text}</NavLink>
+                      )}
+                    </li>
+                  ))}
+              </FlexList>
+            </nav>
+            <div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div>
+          </Flex>
         </Flex>
       </Container>
       <Container className={mobileHeaderNavWrapper[isOpen ? "open" : "closed"]}>
