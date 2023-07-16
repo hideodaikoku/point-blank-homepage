@@ -37,5 +37,12 @@ module.exports = {
         icon: "src/favicon.png",
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        footnotes: true,
+        gfm: true,
+      },
+    },
   ],
 }

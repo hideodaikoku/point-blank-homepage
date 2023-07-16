@@ -14,6 +14,7 @@ import {
 } from "./ui"
 
 export default function Hero(props) {
+  console.log(props)
   return (
     <Section>
       <Container>
@@ -24,7 +25,7 @@ export default function Hero(props) {
               {props.h1}
             </Heading>
             <Subhead as="h2">{props.subhead}</Subhead>
-            <Text as="p">{props.text}</Text>
+            <Text as="p">{props.description}</Text>
             <ButtonList links={props.links} />
           </Box>
           <Box width="half">
@@ -46,8 +47,7 @@ export const query = graphql`
     id
     kicker
     h1: heading
-    subhead
-    text
+    description
     links {
       id
       href
