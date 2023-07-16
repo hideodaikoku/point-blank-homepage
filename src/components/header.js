@@ -10,6 +10,7 @@ import {
   Button,
   InteractiveIcon,
   Nudge,
+  Text,
   VisuallyHidden,
 } from "./ui"
 import {
@@ -76,8 +77,10 @@ export default function Header() {
         <Space size={2} />
         <Flex variant="spaceBetween">
           <NavLink to="/">
-            <VisuallyHidden>Home</VisuallyHidden>
-            <BrandLogo />
+            <Flex variant="spaceBetween">
+              <BrandLogo />
+              <Text variant="navTitle">POINT BLANK CAPITAL</Text>
+            </Flex>
           </NavLink>
           <nav>
             <FlexList gap={4}>

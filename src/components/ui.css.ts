@@ -291,7 +291,7 @@ export const text: Record<TextVariants, string> = styleVariants({
       marginBottom: theme.space[6],
       fontSize: theme.fontSizes[5],
       fontFamily: theme.fonts.heading,
-      fontWeight: theme.fontWeights.extrabold,
+      fontWeight: theme.fontWeights.semibold,
       lineHeight: theme.lineHeights.heading,
       letterSpacing: theme.letterSpacings.tight,
       "@media": {
@@ -307,7 +307,7 @@ export const text: Record<TextVariants, string> = styleVariants({
       marginBottom: theme.space[3],
       fontFamily: theme.fonts.heading,
       fontSize: theme.fontSizes[5],
-      fontWeight: theme.fontWeights.extrabold,
+      fontWeight: theme.fontWeights.semibold,
       lineHeight: theme.lineHeights.tight,
       letterSpacing: theme.letterSpacings.tight,
       "@media": {
@@ -322,7 +322,7 @@ export const text: Record<TextVariants, string> = styleVariants({
     {
       marginBottom: theme.space[3],
       fontSize: theme.fontSizes[5],
-      fontWeight: theme.fontWeights.extrabold,
+      fontWeight: theme.fontWeights.semibold,
       lineHeight: theme.lineHeights.tight,
       letterSpacing: theme.letterSpacings.tight,
     },
@@ -332,7 +332,7 @@ export const text: Record<TextVariants, string> = styleVariants({
     {
       marginBottom: theme.space[3],
       fontSize: theme.fontSizes[4],
-      fontWeight: theme.fontWeights.extrabold,
+      fontWeight: theme.fontWeights.semibold,
       lineHeight: theme.lineHeights.tight,
       letterSpacing: theme.letterSpacings.tight,
     },
@@ -343,7 +343,7 @@ export const text: Record<TextVariants, string> = styleVariants({
       marginBottom: theme.space[2],
       fontFamily: theme.fonts.mono,
       fontSize: theme.fontSizes[1],
-      fontWeight: theme.fontWeights.medium,
+      fontWeight: theme.fontWeights.normal,
       lineHeight: theme.lineHeights.tight,
       letterSpacing: theme.letterSpacings.wide,
       textTransform: "uppercase",
@@ -360,19 +360,29 @@ export const text: Record<TextVariants, string> = styleVariants({
       fontStyle: "normal",
     },
   ],
+  navTitle: [
+    margin0,
+    {
+      fontSize: theme.fontSizes[1],
+      fontWeight: theme.fontWeights.semibold,
+      letterSpacing: theme.letterSpacings.wide,
+      textTransform: "uppercase",
+      fontStyle: "normal",
+    },
+  ],
   stat: [
     margin0,
     {
       fontFamily: theme.fonts.mono,
       fontSize: theme.fontSizes[6],
-      fontWeight: theme.fontWeights.medium,
+      fontWeight: theme.fontWeights.normal,
       lineHeight: theme.lineHeights.tight,
     },
   ],
   statLabel: [
     margin0,
     {
-      fontWeight: theme.fontWeights.bold,
+      fontWeight: theme.fontWeights.semibold,
       fontSize: theme.fontSizes[4],
       lineHeight: theme.lineHeights.heading,
     },
@@ -408,7 +418,7 @@ export const text: Record<TextVariants, string> = styleVariants({
     textAlign: "center",
   },
   bold: {
-    fontWeight: theme.fontWeights.bold,
+    fontWeight: theme.fontWeights.semibold,
   },
 })
 
@@ -449,7 +459,7 @@ export const navButtonlink = style({
 
 export const ctaLink = style({
   color: "inherit",
-  fontWeight: theme.fontWeights.bold,
+  fontWeight: theme.fontWeights.semibold,
   ":hover": {
     color: theme.colors.active,
   },
@@ -464,7 +474,7 @@ export const blockLink = style({
 const button = style({
   display: "inline-flex",
   textDecoration: "none",
-  fontWeight: theme.fontWeights.bold,
+  fontWeight: theme.fontWeights.semibold,
   fontSize: theme.fontSizes[2],
   lineHeight: theme.lineHeights.solid,
   paddingTop: theme.space[3],

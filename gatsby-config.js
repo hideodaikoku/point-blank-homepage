@@ -7,9 +7,9 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     siteUrl: "https://gatsbycontentfulhomepage.gatsbyjs.io/",
-    title: "Gatsby Contentful Homepage Starter",
-    author: `Gatsby`,
-    description: "A Gatsby Starter for building homepages with Contentful",
+    title: "POINT BLANK CAPITAL",
+    author: `Hideo Daikoku`,
+    description: "UAE'S LEADING PROPRIETARY TRADING FIRM.",
   },
   plugins: [
     {
@@ -28,12 +28,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Gatsby Starter Contentful Homepage",
-        short_name: "Gatsby",
+        name: "POINT BLANK CAPITAL",
+        short_name: "PointBlank",
         start_url: "/",
         // These can be imported once ESM support lands
-        background_color: "#ffe491",
-        theme_color: "#004ca3",
+        background_color: "#ffffff",
+        theme_color: "#000000",
         icon: "src/favicon.png",
       },
     },

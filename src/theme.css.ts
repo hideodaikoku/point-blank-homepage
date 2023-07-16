@@ -1,8 +1,12 @@
-import { createGlobalTheme } from "@vanilla-extract/css"
+import { createGlobalTheme, globalFontFace } from "@vanilla-extract/css"
 import { colors } from "./colors.css"
 
 export type SpaceTokens = 0 | 1 | 2 | 3 | 4 | 5 | 6
 export type Space = Record<SpaceTokens, string>
+
+globalFontFace("Inter", {
+  src: 'url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap")'
+});
 
 const space = {
   0: "0",
@@ -38,17 +42,15 @@ const fontSizes = {
 }
 
 const fontWeights = {
+  light: "200",
   normal: "400",
-  medium: "500",
   semibold: "600",
-  bold: "700",
-  extrabold: "800",
 }
 
 const fonts = {
-  text: '"DM Sans", sans-serif',
-  heading: '"DM Sans", sans-serif',
-  mono: "DM Mono, Menlo, monospace",
+  text: '"Inter", sans-serif',
+  heading: '"Inter", sans-serif',
+  mono: "Space Mono, Menlo, monospace",
 }
 
 const lineHeights = {
