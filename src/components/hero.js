@@ -1,5 +1,3 @@
-import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as React from "react"
 import {
   Box,
@@ -10,53 +8,39 @@ import {
   Kicker,
   Section,
   Subhead,
-  Text,
 } from "./ui"
-
+import { StaticImage } from "gatsby-plugin-image"
 export default function Hero(props) {
-  console.log(props)
+  const links = [
+    {
+      id: "0",
+      href: "https://google.com/",
+      text: "GET STARTED NOW",
+    },
+  ]
   return (
     <Section>
       <Container>
         <Flex gap={5} variant="responsive">
           <Box width="half">
             <Heading as="h1">
-              {props.kicker && <Kicker>{props.kicker}</Kicker>}
-              {props.h1}
+              <Kicker>POINT BLANK CAPITAL</Kicker>
+              WELCOME TO THE WORLDS'S LEADING PROPRIETARY TRADING FIRM.
             </Heading>
-            <Subhead as="h2">{props.subhead}</Subhead>
-            <Text as="p">{props.description}</Text>
-            <ButtonList links={props.links} />
+            <Subhead>
+              We provide education, support and capital to traders across the
+              globe.
+            </Subhead>
+            <ButtonList links={links} />
           </Box>
           <Box width="half">
-            {props.image && (
-              <GatsbyImage
-                alt={props.image.alt}
-                image={getImage(props.image.gatsbyImageData)}
+              <StaticImage
+                alt="POINT BLANK CAPITAL: THE WORLDS's LEADING PROPRIETARY TRADING FIRM."
+                src="../images/key-image.png"
               />
-            )}
           </Box>
         </Flex>
       </Container>
     </Section>
   )
 }
-
-export const query = graphql`
-  fragment HomepageHeroContent on HomepageHero {
-    id
-    kicker
-    h1: heading
-    description
-    links {
-      id
-      href
-      text
-    }
-    image {
-      id
-      gatsbyImageData
-      alt
-    }
-  }
-`

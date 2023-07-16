@@ -18,7 +18,7 @@ export const container = style({
   paddingRight: theme.space[4],
 })
 
-export type Containers = "normal" | "wide" | "narrow" | "tight" | "fullbleed"
+export type Containers = "normal" | "wide" | "narrow" | "tight" | "fullbleed" | "outline"
 
 export const containers: Record<Containers, string> = styleVariants({
   normal: [container],
@@ -41,6 +41,15 @@ export const containers: Record<Containers, string> = styleVariants({
     {
       maxWidth: theme.sizes.tight,
     },
+  ],
+  outline: [
+    container,
+    {
+      border: "1px solid black",
+      borderRadius: "5px",
+      padding: "2rem",
+      width: "380px"
+    }
   ],
   fullbleed: [
     container,
@@ -90,7 +99,7 @@ export const flexVariants: Record<FlexVariants, string> = styleVariants({
   },
   columnStart: {
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "flex-start"
   },
   column: {
     flexDirection: "column",
@@ -119,6 +128,24 @@ export const flexVariants: Record<FlexVariants, string> = styleVariants({
       },
     },
   },
+  responsiveTop: {
+    flexDirection: "column",
+    alignItems: "start",
+    width: "100%",
+    "@media": {
+      [media.medium]: {
+        flexDirection: "row",
+      },
+    },
+  },
+  responsiveReverse: {
+    flexDirection: "column-reverse",
+    "@media": {
+      [media.small]: {
+        flexDirection: "row",
+      },
+    },
+  }
 })
 
 export const flexGap = styleVariants(theme.space, (gap) => ({ gap }))
@@ -264,6 +291,29 @@ export type TextVariants =
   | "bold"
 
 export const text: Record<TextVariants, string> = styleVariants({
+  label: [
+    margin0,
+    {
+      fontSize: theme.fontSizes[2],
+      fontWeight: theme.fontWeights.normal,
+      lineHeight: theme.lineHeights.text,
+      letterSpacing: theme.letterSpacings.normal,
+      textAlign: "center",
+    },
+  ],
+  labelKicker: [
+    margin0,
+    {
+      marginBottom: theme.space[2],
+      fontFamily: theme.fonts.mono,
+      fontSize: theme.fontSizes[1],
+      fontWeight: theme.fontWeights.normal,
+      lineHeight: theme.lineHeights.tight,
+      letterSpacing: theme.letterSpacings.wide,
+      textTransform: "uppercase",
+      textAlign: "center",
+    },
+  ],
   body: [
     margin0,
     {

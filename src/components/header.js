@@ -59,9 +59,7 @@ export default function Header() {
       }
     }
   `)
-
-  console.log(data)
-
+  
   const { navItems, cta } = data.layout.header
   const [isOpen, setOpen] = React.useState(false)
 
