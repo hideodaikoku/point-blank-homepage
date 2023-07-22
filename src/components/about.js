@@ -1,13 +1,22 @@
 import * as React from "react"
-import { Box, Container, Flex, Heading, Kicker, Section, Text } from "./ui"
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Kicker,
+  Section,
+  Text,
+  Link,
+} from "./ui"
 import { StaticImage } from "gatsby-plugin-image"
 export default function About() {
   return (
     <Section id="about">
       <Container>
-        <Flex gap={5} variant="responsiveReverse">
+        <Flex gap={5} variant="responsiveTop">
           <Flex variant="column">
-            <Flex variant="responsive">
+            <Flex variant="responsiveTop">
               <Box width="full">
                 <StaticImage
                   alt="CEO, Koki Serada & CIO Daniel Howie"
@@ -17,7 +26,7 @@ export default function About() {
                   <Text variant="labelKicker">Chief Investment Officer</Text>
                   <Text variant="label">Daniel Leslie</Text>
                   <Text variant="label">
-                    <a href="mailto:email@email.com">email@email.com</a>
+                    <Link href="mailto:email@email.com">email@email.com</Link>
                   </Text>
                 </div>
               </Box>
@@ -31,7 +40,7 @@ export default function About() {
                   <Text variant="labelKicker">Chief Operating Officer</Text>
                   <Text variant="label">Koki Serada</Text>
                   <Text variant="label">
-                    <a href="mailto:email@email.com">email@email.com</a>
+                    <Link href="mailto:email@email.com">email@email.com</Link>
                   </Text>
                 </div>
               </Box>
@@ -45,7 +54,7 @@ export default function About() {
                   <Text variant="labelKicker">Chief Talent Officer</Text>
                   <Text variant="label">Melody Fung</Text>
                   <Text variant="label">
-                    <a href="mailto:email@email.com">email@email.com</a>
+                    <Link href="mailto:email@email.com">email@email.com</Link>
                   </Text>
                 </div>
               </Box>
