@@ -4,8 +4,12 @@ import {
   Section,
   Box,
   Kicker,
+  Flex,
+  Button,
+  Space,
   Heading,
 } from "./ui"
+import YoutubeEmbed from './youtube-embed'
 
 export default function Education() {
   return (
@@ -18,6 +22,13 @@ export default function Education() {
               EDUCATION
             </Heading>
           </Box>
+          <Box>
+            <YoutubeEmbed/>
+          </Box>
+          <Space size={3}/>
+          <Flex variant="center">
+            <Button variant="primary" href="https://blogspot.com/">Learn More</Button>
+          </Flex>
         </Box>
       </Container>
     </Section>
