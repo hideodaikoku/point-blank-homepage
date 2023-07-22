@@ -7,6 +7,17 @@ import {
   Heading,
 } from "./ui"
 
+const leaderboard = [
+  {
+    profilePicture: "",
+    firstName: "",
+    country: "",
+    accountSize: "",
+    monthlyGainPercent: "",
+    monthlyGainDollars: "",
+  }
+]
+
 export default function Education() {
   return (
     <Section id="leaderboard">
