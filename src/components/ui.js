@@ -124,6 +124,7 @@ export function Text({
   )
 }
 
+
 export function SuperHeading({ ...props }) {
   return <Text as="h1" variant="superHeading" {...props} />
 }

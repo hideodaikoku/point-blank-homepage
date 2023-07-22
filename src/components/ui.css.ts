@@ -131,10 +131,25 @@ export const flexVariants: Record<FlexVariants, string> = styleVariants({
   responsiveTop: {
     flexDirection: "column",
     alignItems: "start",
+    justifyContent:"space-around",
     width: "100%",
+    margin: "0 auto",
     "@media": {
       [media.medium]: {
         flexDirection: "row",
+      },
+    },
+  },
+  responsiveTopCondensed: {
+    flexDirection: "column",
+    alignItems: "start",
+    justifyContent:"space-around",
+    width: "100%",
+    margin: "0 auto",
+    "@media": {
+      [media.medium]: {
+        flexDirection: "row",
+        width: "80%"
       },
     },
   },
