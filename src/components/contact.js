@@ -3,7 +3,6 @@ import {
   Container,
   Section,
   Box,
-  Kicker,
   Heading,
   Flex,
   Text,
@@ -20,7 +19,6 @@ export default function Contact() {
         <Box>
           <Box center paddingY={2}>
             <Heading>
-              <Kicker>GET IN TOUCH</Kicker>
               CONTACT US
             </Heading>
           </Box>

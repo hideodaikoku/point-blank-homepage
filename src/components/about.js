@@ -4,7 +4,6 @@ import {
   Container,
   Flex,
   Heading,
-  Kicker,
   Section,
   Text,
   Link,
@@ -62,7 +61,7 @@ export default function About() {
           </Flex>
           <Box width="half">
             <Heading as="h2">
-              <Kicker>ABOUT US</Kicker>OUR STORY
+              OUR STORY
             </Heading>
             <Box>
               <Text as="p">
