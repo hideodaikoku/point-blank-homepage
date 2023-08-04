@@ -5,7 +5,6 @@ import {
   Container,
   Flex,
   Heading,
-  Kicker,
   Section,
   Subhead,
 } from "./ui"
@@ -21,24 +20,27 @@ export default function Hero(props) {
   return (
     <Section>
       <Container>
-        <Flex gap={5} variant="responsive">
-          <Box width="half">
-            <Heading as="h1">
-              <Kicker>POINT BLANK CAPITAL</Kicker>
-              WELCOME TO THE WORLDS'S LEADING PROPRIETARY TRADING FIRM.
-            </Heading>
-            <Subhead>
-              We provide education, support and capital to traders across the
-              globe.
-            </Subhead>
-            <ButtonList links={links} />
-          </Box>
-          <Box width="half">
-              <StaticImage
-                alt="POINT BLANK CAPITAL: THE WORLDS's LEADING PROPRIETARY TRADING FIRM."
-                src="../images/key-image.png"
-              />
-          </Box>
+        <Flex variant="fullHeight">
+          <Flex gap={5} variant="responsive">
+            <Box width="half">
+              <Heading as="h1">
+                WELCOME TO THE WORLD'S LEADING PROPRIETARY TRADING FIRM.
+              </Heading>
+              <Subhead>
+                We provide education, support and capital to traders across the
+                globe.
+              </Subhead>
+              <ButtonList links={links} />
+            </Box>
+            <Box width="half">
+              <Flex variant="center">
+                <StaticImage
+                  alt="POINT BLANK CAPITAL: THE WORLDS's LEADING PROPRIETARY TRADING FIRM."
+                  src="../images/key-image.png"
+                />
+              </Flex>
+            </Box>
+          </Flex>
         </Flex>
       </Container>
     </Section>

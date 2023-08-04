@@ -18,7 +18,13 @@ export const container = style({
   paddingRight: theme.space[4],
 })
 
-export type Containers = "normal" | "wide" | "narrow" | "tight" | "fullbleed" | "outline"
+export type Containers =
+  | "normal"
+  | "wide"
+  | "narrow"
+  | "tight"
+  | "fullbleed"
+  | "outline"
 
 export const containers: Record<Containers, string> = styleVariants({
   normal: [container],
@@ -48,8 +54,13 @@ export const containers: Record<Containers, string> = styleVariants({
       border: "1px solid black",
       borderRadius: "5px",
       padding: "2rem",
-      width: "380px"
-    }
+      width: "100%",
+      "@media": {
+        [media.small]: {
+          width: "380px",
+        },
+      },
+    },
   ],
   fullbleed: [
     container,
@@ -99,7 +110,7 @@ export const flexVariants: Record<FlexVariants, string> = styleVariants({
   },
   columnStart: {
     flexDirection: "column",
-    alignItems: "flex-start"
+    alignItems: "flex-start",
   },
   column: {
     flexDirection: "column",
@@ -120,6 +131,18 @@ export const flexVariants: Record<FlexVariants, string> = styleVariants({
     flexWrap: "wrap",
     justifyContent: "center",
   },
+  fullHeight: {
+    flexDirection: "column",
+    height: "100vh",
+    margin: "0 auto",
+    justifyContent: "center",
+    alignItems: "center",
+    "@media": {
+      [media.small]: {
+        height: "calc(100vh - 250px)",
+      },
+    },
+  },
   responsive: {
     flexDirection: "column",
     "@media": {
@@ -131,7 +154,7 @@ export const flexVariants: Record<FlexVariants, string> = styleVariants({
   responsiveTop: {
     flexDirection: "column",
     alignItems: "start",
-    justifyContent:"space-around",
+    justifyContent: "space-around",
     width: "100%",
     margin: "0 auto",
     "@media": {
@@ -143,13 +166,13 @@ export const flexVariants: Record<FlexVariants, string> = styleVariants({
   responsiveTopCondensed: {
     flexDirection: "column",
     alignItems: "start",
-    justifyContent:"space-around",
+    justifyContent: "space-around",
     width: "100%",
     margin: "0 auto",
     "@media": {
       [media.medium]: {
         flexDirection: "row",
-        width: "80%"
+        width: "80%",
       },
     },
   },
@@ -160,7 +183,7 @@ export const flexVariants: Record<FlexVariants, string> = styleVariants({
         flexDirection: "row",
       },
     },
-  }
+  },
 })
 
 export const flexGap = styleVariants(theme.space, (gap) => ({ gap }))
