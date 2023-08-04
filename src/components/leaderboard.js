@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Container, Section, Box, Kicker, Heading, Flex, Text } from "./ui"
+import { Container, Section, Box, Heading, Flex } from "./ui"
 import { TableContainer, Table, Th, Td, Image } from "./leaderboard.css"
 
 const leaderboard = [
@@ -98,7 +98,6 @@ export default function Education() {
         <Box>
           <Box center paddingY={2}>
             <Heading>
-              <Kicker>COMPARE</Kicker>
               LEADERBOARD
             </Heading>
           </Box>

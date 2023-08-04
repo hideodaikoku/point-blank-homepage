@@ -3,7 +3,6 @@ import {
   Container,
   Section,
   Box,
-  Kicker,
   Heading,
   Flex,
 } from "./ui"
@@ -40,7 +39,6 @@ export default function Evaluations() {
         <Box>
           <Box center paddingY={2}>
             <Heading>
-              <Kicker>PRICING</Kicker>
               EVALUATIONS
             </Heading>
           </Box>

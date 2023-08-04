@@ -3,7 +3,6 @@ import {
   Container,
   Section,
   Box,
-  Kicker,
   Flex,
   Button,
   Space,
@@ -18,7 +17,6 @@ export default function Education() {
         <Box>
           <Box center paddingY={2}>
             <Heading>
-              <Kicker>LEARN</Kicker>
               EDUCATION
             </Heading>
           </Box>

@@ -3,7 +3,6 @@ import {
   Container,
   Section,
   Box,
-  Kicker,
   Heading,
   ButtonList,
   Flex,
@@ -46,7 +45,6 @@ export default function Steps() {
         <Box>
           <Box center paddingY={2}>
             <Heading>
-              <Kicker>GETTING STARTED</Kicker>
               HOW IT WORKS
             </Heading>
           </Box>
