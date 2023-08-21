@@ -15,8 +15,8 @@ export default function Homepage(props) {
       <Steps/>
       <Evaluations/>
       <Education/>
-      <Leaderboard/>
-      <About/>
+      {/* <Leaderboard/> */}
+      {/* <About/> */}
       <Contact/>
     </Layout>
   )
