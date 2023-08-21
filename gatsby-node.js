@@ -207,6 +207,16 @@ exports.createSchemaCustomization = async ({ actions }) => {
       links: [HomepageLink]
     }
 
+    interface Leaderboard implements Node {
+      id: ID!
+      name: String
+      profilePicture: HomepageImage
+      country: String
+      accountSize: Float
+      monthlyGainPercent: Float
+      monthlyGainDollars: Float
+    }
+
     interface HomepageProduct implements Node {
       id: ID!
       heading: String
@@ -364,6 +374,16 @@ exports.createSchemaCustomization = async ({ actions }) => {
       url: String @imageUrl
       file: JSON
       title: String
+    }
+
+    type Leaderboard implements Node {
+      id: ID!
+      name: String
+      profilePicture: HomepageImage @link(from: "image___NODE")
+      country: String
+      accountSize: Float
+      monthlyGainPercent: Float
+      monthlyGainDollars: Float
     }
 
     type ContentfulHomepageFeature implements Node & HomepageBlock & HomepageFeature
