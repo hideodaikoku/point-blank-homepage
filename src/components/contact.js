@@ -9,7 +9,7 @@ import {
   Link,
   FlexList,
 } from "./ui"
-import { Twitter, Facebook, Youtube, Instagram, FileText} from "react-feather"
+import { Twitter, Facebook, Youtube, Instagram, FileText } from "react-feather"
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Contact() {
@@ -18,9 +18,7 @@ export default function Contact() {
       <Container>
         <Box>
           <Box center paddingY={2}>
-            <Heading>
-              CONTACT US
-            </Heading>
+            <Heading>CONTACT US</Heading>
           </Box>
         </Box>
 
@@ -35,25 +33,32 @@ export default function Contact() {
           <Box width="half">
             <Flex variant="start">
               <StaticImage src="../images/building.svg" width={24} />
-              <Text variant="subheadSmall">Address</Text>
+              <Text variant="subheadSmall">Registered Address</Text>
             </Flex>
             <Text>
-              Point Blank Capital - FZCO, Tower 2, Unit 7302, Etihad Towers,
-              King Abdullah bin Abdulaziz al Saud Street, Al Bateen, Abu Dhabi,
-              Emirate of Abu Dhabi, United Arab Emirates
+              29694-001, IFZA Business Park, DDP, Dubai, Emirate of Dubai,
+              United Arab Emirates
+            </Text>
+            <Flex variant="start">
+              <StaticImage src="../images/building.svg" width={24} />
+              <Text variant="subheadSmall">Physical Address</Text>
+            </Flex>
+            <Text>
+              T2 7302 Etihad Towers, King Abdullah bin Abdulaziz al Saud Street,
+              Al Bateen, Abu Dhabi, Emirate of Abu Dhabi, United Arab Emirates
             </Text>
             <Flex variant="start">
               <StaticImage src="../images/email.svg" width={24} />
               <Text variant="subheadSmall">Email</Text>
             </Flex>
             <Text>
-              <Link href="mailto:mail@email.com">mail@email.com</Link>
+              <Link href="mailto:support@pointblankcap.com">support@pointblankcap.com</Link>
             </Text>
             <Flex variant="start">
               <StaticImage src="../images/phone.svg" width={24} />
               <Text variant="subheadSmall">Phone</Text>
             </Flex>
-            <Text>+00-000-000-0000</Text>
+            <Text>+971 58 598 5937</Text>
             <FlexList>
               <Link href="https://facebook.com">
                 <Facebook />
