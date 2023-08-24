@@ -59,7 +59,7 @@ export default function Header() {
       }
     }
   `)
-  
+
   const { navItems, cta } = data.layout.header
   const [isOpen, setOpen] = React.useState(false)
 
@@ -70,6 +70,8 @@ export default function Header() {
       document.body.style.overflowY = "visible"
     }
   }, [isOpen])
+
+  console.log(navItems)
 
   return (
     <header>
@@ -88,11 +90,15 @@ export default function Header() {
                 {navItems &&
                   navItems.map((navItem) => (
                     <li key={navItem.id}>
-                      {navItem.navItemType === "Group" ? (
-                        <NavItemGroup
-                          name={navItem.name}
-                          navItems={navItem.navItems}
-                        />
+                      {navItem.text === "Blog" ? (
+                        <a
+                          href="https://pointblankcap.blogspot.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "black", textDecoration: "none" }}
+                        >
+                          Blog
+                        </a>
                       ) : (
                         <NavLink to={navItem.href}>{navItem.text}</NavLink>
                       )}

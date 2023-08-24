@@ -13,7 +13,7 @@ export default function Hero(props) {
   const links = [
     {
       id: "0",
-      href: "https://google.com/",
+      href: "https://discord.gg/jR5hNJF8/",
       text: "GET STARTED NOW",
     },
   ]
@@ -24,7 +24,7 @@ export default function Hero(props) {
           <Flex gap={5} variant="responsive">
             <Box width="half">
               <Heading as="h1">
-                WELCOME TO THE WORLD'S LEADING PROPRIETARY TRADING FIRM.
+                WELCOME TO A WORLD-CLASS PROPRIETARY TRADING FIRM
               </Heading>
               <Subhead>
                 We provide education, support and capital to traders across the

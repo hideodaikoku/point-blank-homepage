@@ -62,6 +62,7 @@ export default function NavItemGroup({ name, navItems }) {
     }
   }, [name, isOpen, onGroupButtonClick])
 
+
   return (
     <Flex
       data-id={`${name}-group-wrapper`}
@@ -92,27 +93,51 @@ export default function NavItemGroup({ name, navItems }) {
           >
             {navItems.map((navItem) => (
               <li key={navItem.id}>
-                <NavLink to={navItem.href} className={styles.navLinkListLink}>
-                  <Flex variant="start" gap={3}>
-                    {navItem.icon && (
-                      <GatsbyImage
-                        alt={navItem.icon.alt}
-                        image={getImage(navItem.icon.gatsbyImageData)}
-                        className={styles.navIcon}
-                      />
-                    )}
-                    <Flex variant="columnStart" marginY={1} gap={0}>
-                      <Box as="span" className={styles.navLinkTitle}>
-                        {navItem.text}
-                      </Box>
-                      {!!navItem.description && (
-                        <Box as="p" className={styles.navLinkDescription}>
-                          {navItem.description}
-                        </Box>
+                {navItem.text === "Blog" ? (
+                  <a href={navItem.href}>
+                    <Flex variant="start" gap={3}>
+                      {navItem.icon && (
+                        <GatsbyImage
+                          alt={navItem.icon.alt}
+                          image={getImage(navItem.icon.gatsbyImageData)}
+                          className={styles.navIcon}
+                        />
                       )}
+                      <Flex variant="columnStart" marginY={1} gap={0}>
+                        <Box as="span" className={styles.navLinkTitle}>
+                          Blog
+                        </Box>
+                        {!!navItem.description && (
+                          <Box as="p" className={styles.navLinkDescription}>
+                            {navItem.description}
+                          </Box>
+                        )}
+                      </Flex>
                     </Flex>
-                  </Flex>
-                </NavLink>
+                  </a>
+                ) : (
+                  <NavLink to={navItem.href} className={styles.navLinkListLink}>
+                    <Flex variant="start" gap={3}>
+                      {navItem.icon && (
+                        <GatsbyImage
+                          alt={navItem.icon.alt}
+                          image={getImage(navItem.icon.gatsbyImageData)}
+                          className={styles.navIcon}
+                        />
+                      )}
+                      <Flex variant="columnStart" marginY={1} gap={0}>
+                        <Box as="span" className={styles.navLinkTitle}>
+                          {navItem.text}
+                        </Box>
+                        {!!navItem.description && (
+                          <Box as="p" className={styles.navLinkDescription}>
+                            {navItem.description}
+                          </Box>
+                        )}
+                      </Flex>
+                    </Flex>
+                  </NavLink>
+                )}
               </li>
             ))}
           </FlexList>
