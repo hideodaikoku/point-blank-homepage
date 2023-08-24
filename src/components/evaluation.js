@@ -10,7 +10,6 @@ import {
 } from "./ui"
 
 export default function Evaluation(props) {
-  console.log(props)
   return (
     <Container width="outline">
       <Flex variant="column">
