@@ -48,6 +48,13 @@ export default function Contact() {
               Al Bateen, Abu Dhabi, Emirate of Abu Dhabi, United Arab Emirates
             </Text>
             <Flex variant="start">
+              <StaticImage src="../images/building.svg" width={24} />
+              <Text variant="subheadSmall">License Number</Text>
+            </Flex>
+            <Text>
+            DSO - FZCO -27735 
+            </Text>
+            <Flex variant="start">
               <StaticImage src="../images/email.svg" width={24} />
               <Text variant="subheadSmall">Email</Text>
             </Flex>
