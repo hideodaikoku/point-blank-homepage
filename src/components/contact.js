@@ -26,8 +26,9 @@ export default function Contact() {
           <Box width="half">
             <StaticImage
               rounded
-              alt="CEO, Koki Serada & CIO Daniel Howie"
+              alt="Point Blank Capital"
               src="../images/place-holder-image.png"
+              style={{"marginBottom": "30px"}}
             />
           </Box>
           <Box width="half">
@@ -48,7 +49,7 @@ export default function Contact() {
               Al Bateen, Abu Dhabi, Emirate of Abu Dhabi, United Arab Emirates
             </Text>
             <Flex variant="start">
-              <StaticImage src="../images/building.svg" width={24} />
+              <StaticImage src="../images/notebook--reference.svg" width={24} />
               <Text variant="subheadSmall">License Number</Text>
             </Flex>
             <Text>

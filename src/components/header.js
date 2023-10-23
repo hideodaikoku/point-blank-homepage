@@ -71,7 +71,7 @@ export default function Header() {
     }
   }, [isOpen])
 
-  console.log(navItems)
+  console.log(isOpen)
 
   return (
     <header>
@@ -158,7 +158,7 @@ export default function Header() {
                       navItems={navItem.navItems}
                     />
                   ) : (
-                    <NavLink to={navItem.href} className={mobileNavLink}>
+                    <NavLink to={navItem.href} className={mobileNavLink} onClick={() => setOpen(!isOpen)}>
                       {navItem.text}
                     </NavLink>
                   )}

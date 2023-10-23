@@ -255,6 +255,7 @@ export const box = styleVariants({
     flexDirection: "column",
     alignItems: "center",
     textAlign: "center",
+    justifyContent: "space-evenly"
   },
 })
 

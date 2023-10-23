@@ -1,11 +1,11 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
-import About from "../components/about"
+// import About from "../components/about"
 import Steps from "../components/steps"
 import Evaluations from "../components/evaluations-list"
 import Education from "../components/education"
-import Leaderboard from "../components/leaderboard"
+// import Leaderboard from "../components/leaderboard"
 import Contact from "../components/contact"
 
 export default function Homepage(props) {
