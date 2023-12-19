@@ -5,7 +5,6 @@ import Head from "./head"
 const Layout = ({ children }) => {
   return (
     <>
-      <Head title="POINT BLANK CAPITAL" description="UAE'S LEADING PROPRIETARY TRADING FIRM."/>
       <Slice alias="header" />
       {children}
       <Slice alias="footer" />
