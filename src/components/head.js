@@ -4,6 +4,7 @@ export default function Head({ title, description }) {
   return (
     <>
       <meta charSet="utf-8" />
+      <meta name="facebook-domain-verification" content="477iq15h9424njbms0vzsjln5ls9ur" />
       <title>{title}</title>
       {description && (
         <meta

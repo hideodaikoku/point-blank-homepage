@@ -71,8 +71,6 @@ export default function Header() {
     }
   }, [isOpen])
 
-  console.log(isOpen)
-
   return (
     <header>
       <Container className={desktopHeaderNavWrapper}>
