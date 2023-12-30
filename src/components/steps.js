@@ -33,7 +33,7 @@ const content = [
 const cta = [
   {
     id: "0",
-    href: "https://google.com/",
+    href: "https://www.pointblankcap.com/#evaluations",
     text: "SIGN UP NOW",
   },
 ]

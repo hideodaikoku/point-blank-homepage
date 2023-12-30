@@ -1,13 +1,5 @@
 import * as React from "react"
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Section,
-  Text,
-  Link,
-} from "./ui"
+import { Box, Container, Flex, Heading, Section, Text, Link } from "./ui"
 import { StaticImage } from "gatsby-plugin-image"
 export default function About() {
   return (
@@ -15,54 +7,54 @@ export default function About() {
       <Container>
         <Flex gap={5} variant="responsiveTop">
           <Flex variant="column">
+          <Heading as="h2">MEET OUR TEAM</Heading>
+            <Box width="half">
+              <StaticImage
+                alt="The Point Blank Capital team"
+                src="../images/point-blank-team.png"
+              />
+            </Box>
             <Flex variant="responsiveTop">
               <Box width="full">
-                <StaticImage
-                  alt="CEO, Koki Serada & CIO Daniel Howie"
-                  src="../images/place-holder-image.png"
-                />
                 <div style={{ marginTop: "1rem" }}>
-                  <Text variant="labelKicker">Chief Investment Officer</Text>
+                  <Text variant="labelKicker">CIO</Text>
                   <Text variant="label">Daniel Leslie</Text>
                   <Text variant="label">
-                    <Link href="mailto:email@email.com">email@email.com</Link>
+                    <Link href="mailto:cio@pointblankcap.com">cio@pointblankcap.com</Link>
                   </Text>
                 </div>
               </Box>
               <Box width="full">
-                <StaticImage
-                  rounded
-                  alt="CEO, Koki Serada & CIO Daniel Howie"
-                  src="../images/place-holder-image.png"
-                />
                 <div style={{ marginTop: "1rem" }}>
-                  <Text variant="labelKicker">Chief Operating Officer</Text>
+                  <Text variant="labelKicker">COO</Text>
                   <Text variant="label">Koki Serada</Text>
                   <Text variant="label">
-                    <Link href="mailto:email@email.com">email@email.com</Link>
+                    <Link href="mailto:coo@pointblankcap.com">coo@pointblankcap.com</Link>
                   </Text>
                 </div>
               </Box>
-
               <Box width="full">
-                <StaticImage
-                  alt="CEO, Koki Serada & CIO Daniel Howie"
-                  src="../images/place-holder-image.png"
-                />
                 <div style={{ marginTop: "1rem" }}>
-                  <Text variant="labelKicker">Chief Talent Officer</Text>
+                  <Text variant="labelKicker">CTO</Text>
                   <Text variant="label">Melody Fung</Text>
                   <Text variant="label">
-                    <Link href="mailto:email@email.com">email@email.com</Link>
+                    <Link href="mailto:cto@email.com">cto@pointblankcap.com</Link>
+                  </Text>
+                </div>
+              </Box>
+              <Box width="full">
+                <div style={{ marginTop: "1rem" }}>
+                  <Text variant="labelKicker">CCO</Text>
+                  <Text variant="label">Daphne Liang</Text>
+                  <Text variant="label">
+                    <Link href="mailto:cco@email.com">cco@pointblankcap.com</Link>
                   </Text>
                 </div>
               </Box>
             </Flex>
           </Flex>
-          <Box width="half">
-            <Heading as="h2">
-              OUR STORY
-            </Heading>
+          {/* <Box width="half">
+            <Heading as="h2">OUR STORY</Heading>
             <Box>
               <Text as="p">
                 Point Blank Capital was formed in late 2022 by two best friends,
@@ -78,7 +70,7 @@ export default function About() {
                 industry
               </Text>
             </Box>
-          </Box>
+          </Box> */}
         </Flex>
       </Container>
     </Section>

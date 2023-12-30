@@ -27,8 +27,8 @@ export default function Contact() {
             <StaticImage
               rounded
               alt="Point Blank Capital"
-              src="../images/place-holder-image.png"
-              style={{"marginBottom": "30px"}}
+              src="../images/key-image.png"
+              style={{ marginBottom: "30px" }}
             />
           </Box>
           <Box width="half">
@@ -45,28 +45,29 @@ export default function Contact() {
               <Text variant="subheadSmall">Physical Address</Text>
             </Flex>
             <Text>
-              T2 7302 Etihad Towers, King Abdullah bin Abdulaziz al Saud Street,
-              Al Bateen, Abu Dhabi, Emirate of Abu Dhabi, United Arab Emirates
+              Floor 73, Etihad Towers, King Abdullah bin Abdulaziz al Saud
+              Street, Al Bateen, Abu Dhabi, Emirate of Abu Dhabi, United Arab
+              Emirates
             </Text>
             <Flex variant="start">
               <StaticImage src="../images/notebook--reference.svg" width={24} />
               <Text variant="subheadSmall">License Number</Text>
             </Flex>
-            <Text>
-            DSO - FZCO -27735 
-            </Text>
+            <Text>DSO - FZCO -27735</Text>
             <Flex variant="start">
               <StaticImage src="../images/email.svg" width={24} />
               <Text variant="subheadSmall">Email</Text>
             </Flex>
             <Text>
-              <Link href="mailto:support@pointblankcap.com">support@pointblankcap.com</Link>
+              <Link href="mailto:support@pointblankcap.com">
+                support@pointblankcap.com
+              </Link>
             </Text>
-            <Flex variant="start">
+            {/* <Flex variant="start">
               <StaticImage src="../images/phone.svg" width={24} />
               <Text variant="subheadSmall">Phone</Text>
             </Flex>
-            <Text>+971 58 598 5937</Text>
+            <Text>+971 58 598 5937</Text> */}
             <FlexList>
               <Link href="https://facebook.com">
                 <Facebook />

@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import { Container, Box, Heading, Text, Link, Flex } from "../components/ui"
 import ChevronRight from "../components/chevron-right"
 import * as styles from "../components/404.css"
-import SEOHead from "../components/head"
 
 export default function NotFound() {
   return (
@@ -29,7 +28,4 @@ export default function NotFound() {
       </Box>
     </Layout>
   )
-}
-export const Head = () => {
-  return <SEOHead title="404: Page not found" />
 }

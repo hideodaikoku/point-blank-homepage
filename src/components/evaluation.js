@@ -26,7 +26,7 @@ export default function Evaluation(props) {
             <small>{props.price}</small>
           </Box>
           <Space size={3}/>
-          <Button href={props.url}>SIGN UP NOW</Button>
+          <Button href={props.link}>SIGN UP NOW</Button>
         </Box>
       </Flex>
     </Container>

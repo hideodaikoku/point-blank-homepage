@@ -11,24 +11,24 @@ import Evaluation from "./evaluation"
 const content = [
   {
     id: "0",
-    heading: "$50,000 Evaluation",
-    features: ["30 Day Evaluation", "10 Minimum Trading Days", "15% Profit Target", "10% Maximum Loss", "5% Maximum Daily Loss", "80% Profit Split"],
-    price: "$500 Evaluation Fee",
-    link: "https://google.com/"
+    heading: "$100,000 Evaluation",
+    features: ["30 Day Evaluation", "10 Minimum Trading Days", "10% Profit Target", "10% Maximum Loss", "5% Maximum Daily Loss", "80% Profit Split"],
+    price: "$1000 Evaluation Fee",
+    link: "https://traders.pointblankcap.com/promotion/challenge"
   },
   {
     id: "1",
     heading: "$250,000 Evaluation",
-    features: ["30 Day Evaluation", "10 Minimum Trading Days", "15% Profit Target", "10% Maximum Loss", "5% Maximum Daily Loss", "80% Profit Split"],
+    features: ["30 Day Evaluation", "10 Minimum Trading Days", "10% Profit Target", "10% Maximum Loss", "5% Maximum Daily Loss", "80% Profit Split"],
     price: "$2,500 Evaluation Fee",
-    link: "https://google.com/"
+    link: "https://traders.pointblankcap.com/promotion/challenge"
   },
   {
     id: "2",
     heading: "$500,000 Evaluation",
-    features: ["30 Day Evaluation", "10 Minimum Trading Days", "15% Profit Target", "10% Maximum Loss", "5% Maximum Daily Loss", "80% Profit Split"],
+    features: ["30 Day Evaluation", "10 Minimum Trading Days", "10% Profit Target", "10% Maximum Loss", "5% Maximum Daily Loss", "80% Profit Split"],
     price: "$5,000 Evaluation Fee",
-    link: "https://google.com/"
+    link: "https://traders.pointblankcap.com/promotion/challenge"
   },
 ]
 

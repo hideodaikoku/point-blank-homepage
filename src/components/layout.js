@@ -1,7 +1,6 @@
 import * as React from "react"
 import "../styles.css"
 import { Slice } from "gatsby"
-import Head from "./head"
 const Layout = ({ children }) => {
   return (
     <>

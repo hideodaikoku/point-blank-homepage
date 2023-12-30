@@ -13,7 +13,7 @@ export default function Hero(props) {
   const links = [
     {
       id: "0",
-      href: "https://discord.gg/jR5hNJF8/",
+      href: "https://www.pointblankcap.com/#evaluations",
       text: "GET STARTED NOW",
     },
   ]
