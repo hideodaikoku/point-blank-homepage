@@ -31,7 +31,7 @@ export default function Contact() {
               style={{ marginBottom: "30px" }}
             />
           </Box>
-          <Box width="half">
+          <Box width="third">
             <Flex variant="start">
               <StaticImage src="../images/building.svg" width={24} />
               <Text variant="subheadSmall">Registered Address</Text>
