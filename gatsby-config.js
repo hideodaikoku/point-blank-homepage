@@ -44,5 +44,11 @@ module.exports = {
         gfm: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-K534WBWQ",
+      },
+    },
   ],
 }
