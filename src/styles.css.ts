@@ -1,11 +1,19 @@
 import { globalStyle, globalKeyframes } from "@vanilla-extract/css"
 import { theme } from "./theme.css"
 
+globalStyle("html", {
+  overflow: "hidden",
+  height: "100%",
+})
+
 globalStyle("body", {
   margin: 0,
   fontFamily: theme.fonts.text,
   color: theme.colors.text,
   backgroundColor: theme.colors.background,
+  overflow: "auto",
+  height: "100%",
+  scrollBehavior: "smooth",
   WebkitFontSmoothing: "antialiased",
   MozOsxFontSmoothing: "grayscale",
 })

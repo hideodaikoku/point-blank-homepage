@@ -14,7 +14,7 @@ const content = [
     id: "0",
     kicker: "STEP 1",
     heading: "Sign up for a trader evaluation",
-    text: "Choose an account size from $50,000 all the way up to $500,000",
+    text: "Choose an account size from $100,000 all the way up to $500,000",
   },
   {
     id: "1",

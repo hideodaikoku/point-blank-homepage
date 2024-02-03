@@ -447,6 +447,7 @@ export const text: Record<TextVariants, string> = styleVariants({
       letterSpacing: theme.letterSpacings.wide,
       textTransform: "uppercase",
       fontStyle: "normal",
+      textAlign: "left"
     },
   ],
   navTitle: [
