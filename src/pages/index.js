@@ -4,7 +4,7 @@ import Hero from "../components/hero"
 import About from "../components/about"
 import Steps from "../components/steps"
 import Evaluations from "../components/evaluations-list"
-import Education from "../components/education"
+import FAQ from "../components/faq"
 // import Leaderboard from "../components/leaderboard"
 import Contact from "../components/contact"
 
@@ -14,7 +14,7 @@ export default function Homepage(props) {
       <Hero/>
       <Steps/>
       <Evaluations/>
-      {/* <Education/> */}
+      <FAQ/>
       {/* <Leaderboard/> */}
       <About/>
       <Contact/>
