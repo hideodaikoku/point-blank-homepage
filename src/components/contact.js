@@ -9,7 +9,7 @@ import {
   Link,
   FlexList,
 } from "./ui"
-import { Twitter, Facebook, Youtube, Instagram, FileText } from "react-feather"
+import { Facebook, Youtube, Instagram, FileText } from "react-feather"
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Contact() {
@@ -53,7 +53,7 @@ export default function Contact() {
               <StaticImage src="../images/notebook--reference.svg" width={24} />
               <Text variant="subheadSmall">License Number</Text>
             </Flex>
-            <Text>DSO - FZCO -27735</Text>
+            <Text>DSO - FZCO - 27735</Text>
             <Flex variant="start">
               <StaticImage src="../images/email.svg" width={24} />
               <Text variant="subheadSmall">Email</Text>
