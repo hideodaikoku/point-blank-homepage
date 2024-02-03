@@ -63,30 +63,40 @@ export default function Contact() {
                 support@pointblankcap.com
               </Link>
             </Text>
-            {/* <Flex variant="start">
-              <StaticImage src="../images/phone.svg" width={24} />
-              <Text variant="subheadSmall">Phone</Text>
-            </Flex>
-            <Text>+971 58 598 5937</Text> */}
             <FlexList>
-              <Link href="https://facebook.com">
+              <Link
+                href="https://facebook.com/pointblankcap"
+                alt="Follow us on Facebook"
+              >
                 <Facebook />
               </Link>
-              <Link href="https://twitter.com">
-                <Twitter />
+              <Link
+                href="https://twitter.com/pointblankcap"
+                alt="Follow us on X"
+              >
+                <StaticImage src="../images/x_logo.svg" width={22} />
               </Link>
-              <Link href="https://instagram.com">
+              <Link
+                href="https://instagram.com/pointblankcap"
+                alt="Follow us on Instagram"
+              >
                 <Instagram />
               </Link>
-              <Link href="https://youtube.com">
+              <Link
+                href="https://youtube.com/@PointBlankCap "
+                alt="Follow us on Youtube"
+              >
                 <Youtube />
               </Link>
 
-              <Link href="https://discord.com">
+              <Link href="https://discord.gg/jR5hNJF8" alt="Join us on Discord">
                 <StaticImage src="../images/discord.svg" width={30} />
               </Link>
 
-              <Link href="https://blogspot.com">
+              <Link
+                href="https://blog.pointblankcap.com/"
+                alt="Follow our blog"
+              >
                 <FileText />
               </Link>
             </FlexList>
