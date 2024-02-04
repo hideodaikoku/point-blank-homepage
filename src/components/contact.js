@@ -89,7 +89,7 @@ export default function Contact() {
                 <Youtube />
               </Link>
 
-              <Link href="https://discord.gg/jR5hNJF8" alt="Join us on Discord">
+              <Link href="https://discord.gg/KakPWqxQ" alt="Join us on Discord">
                 <StaticImage src="../images/discord.svg" width={30} />
               </Link>
 
